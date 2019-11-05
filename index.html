@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scales=1">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header  navbar-font">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><b>salesapp</b></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h2>Codezoomers-Sales App</h2>
+        <p>This App is Designed to Assist Codezoomers in thier Daily Records keeping...</p>
+        <ul class="nav nav-pills">
+          <li class="active"><a data-toggle="pill" href="#home">Revenue</a></li>
+          <li><a data-toggle="pill" href="#menu1">Expenses</a></li>
+          <li><a data-toggle="pill" href="#menu2">Report</a></li>
+          <li><a data-toggle="pill" href="#menu3">Inventory</a></li>
+        </ul>
+        
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <form>
+              
+                      <div class="form-group  col-md-4">
+                        <label for="sel1">Sales category</label>
+                        <select class="form-control" id="can">
+                            <option>select</option>
+                            <option>Binding</option>
+                            <option>Course</option>
+                            <option>Design</option>
+                            <option>Website</option>
+                            <option>DI Print</option>
+                            <option>Color print</option>
+                            <option>Photocopy</option>
+                            <option>LAmination</option>
+                            <option>Doc. Edithing</option>
+                            <option>ID Card</option>
+                            <option>Flex</option>
+                            <option>SAV</option>
+                            <option>Internet</option>
+                            <option>Typing</option>
+                            <option>Jotter</option>
+                            <option>LOGO</option>
+                                  
+                        </select>
+                 
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="Amt">Amount </label>
+                  <input type="number" class="form-control" id="amt">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="sel1">Mode of Payment</label>
+                    <select class="form-control" id="sell">
+                        <option >select</option>
+                        <option value="ATM">ATM</option>
+                        <option value="POS">POS</option>
+                        <option value="CASH">CASH</option>
+                        <option value="TRANSFER">TRANSFER</option>
+                        <option value="#"></option>
+                       <!--- <option>Website</option>
+                        <option>DI Print</option>
+                        <option>Color print</option>
+                        <option>Photocopy</option> -->
+                        
+                    </select>
+             
+            </div>
+            <div class="form-group col-md-8">
+                <label for="comment">Description</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            <button type="button" class="btn btn-primary" onclick="pay();">Submit</button>
+                
+              </form>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <h3>Menu 3</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Category</th>
+              <th>Amount</th>
+              <th>Mode of Payment</th>
+              <th>Description</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td id="CAT"></td>
+              <td id="amts" ></td>
+              <td id="MOP"></td>
+              <td id="DES"> </td>
+              
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        
+    
+      
+<script src="jquery/dist/jquery.min.js"> </script>
+<script src="bootstrap\dist\js\bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2017 20:59:23 GMT -->
+
+</html>

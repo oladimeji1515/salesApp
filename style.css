@@ -1,0 +1,21 @@
+/* General css for Codezoomers Sales App.*/
+
+
+
+/* Changin the Header to blue*/
+.navbar-inverse{
+ background-color:blue;
+
+
+ }
+ .navbar{border-color:blue; 
+        }
+
+ .navbar-font  { color: black;                
+ }       
+ .navbar-brand {
+     letter-spacing: 3px;
+     text-transform: uppercase;
+ }
+ .navbar-nav {letter-spacing: 3px;
+    text-transform: uppercase;}
